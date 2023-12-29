@@ -22,6 +22,30 @@ public class SavingsAccount extends BankAccount{
         super.withdraw (amount);
     }
 
+    public double getRate() {
+        return rate;
+    }
+
+    public void setRate(double rate) {
+        this.rate = rate;
+    }
+
+    public double getMaxWithdrawalLimit() {
+        return maxWithdrawalLimit;
+    }
+
+    public void setMaxWithdrawalLimit(double maxWithdrawalLimit) {
+        this.maxWithdrawalLimit = maxWithdrawalLimit;
+    }
+
+    public double getSavbal() {
+        return savbal;
+    }
+
+    public void setSavbal(double savbal) {
+        this.savbal = savbal;
+    }
+
     public double getSimpleInterest(int years){
         // Return the final amount considering that bank gives simple interest on current amount
         return savbal*rate*years/100;
