@@ -6,9 +6,9 @@ public class BankAccount {
     private double balance;
     private double minBalance;
 
-    public BankAccount(){
-
-    }
+//    public BankAccount(){
+//
+//    }
     public BankAccount(String name, double balance, double minBalance) {
 
         this.name=name;
@@ -53,7 +53,7 @@ public class BankAccount {
             while (nines-- > 0)
                 accno.append("9");
             if (rem > 0)
-                accno.append(rem);
+                accno.append(rem+"");
             while (accno.length() < digits)
                 accno.append("0");
 

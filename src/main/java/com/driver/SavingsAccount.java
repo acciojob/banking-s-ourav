@@ -18,7 +18,8 @@ public class SavingsAccount extends BankAccount{
 
         if(amount>maxWithdrawalLimit)
             throw new Exception ("Maximum Withdraw Limit Exceeded");
-        super.withdraw (amount);
+        else
+            super.withdraw (amount);
     }
 
     public double getRate() {
@@ -45,7 +46,7 @@ public class SavingsAccount extends BankAccount{
 
     public double getCompoundInterest(int times, int years){
         // Return the final amount considering that bank gives compound interest on current amount given times per year
-        return super.getBalance()+(super.getBalance()* Math.pow( (1+ (rate/times)), (times*years)));
+        return super.getBalance()+(super.getBalance()*( Math.pow( (1+ (rate/times)), (times*years))));
     }
 
 }
