@@ -58,7 +58,6 @@ public class BankAccount {
                 accno.append("0");
 
             return accno.toString();
-
         }
     }
 

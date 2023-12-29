@@ -36,15 +36,11 @@ public class CurrentAccount extends BankAccount{
             }
         }
             if(!valid) {
-
                 StringBuilder sb=new StringBuilder();
-
                 int freq[]=new int[26];
-
                 for(char ch : tradeLicenseId.toCharArray()){
                     freq[ch-'a'] ++;
                 }
-
                 int n=tradeLicenseId.length();
                 for(int i=0;i<n;i++){
                     char maxc=' ';
@@ -62,7 +58,6 @@ public class CurrentAccount extends BankAccount{
                     // System.out.println(maxc);
                     freq[(int)maxc-'a']--;
                 }
-
                 tradeLicenseId=new String(sb.toString());
             }
 
