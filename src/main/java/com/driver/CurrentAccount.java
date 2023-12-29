@@ -36,7 +36,7 @@ public class CurrentAccount extends BankAccount{
             }
         }
             if(!valid) {
-                //always possible to re-arrange
+
                 StringBuilder sb=new StringBuilder();
 
                 int freq[]=new int[26];
